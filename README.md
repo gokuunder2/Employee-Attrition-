@@ -1,42 +1,181 @@
-# Prodigy-Infotech-Data-Science-Task-1
+#🧠 Employee Attrition Analysis & Prediction
+📌 Project Overview
 
-<br>
-<img src = "https://github.com/WebberX45/Prodigy-Infotech-Data-Science-Task-1/blob/main/Task%201.jpeg">
+Employee attrition is a major challenge for organizations, leading to increased recruitment costs and loss of experienced talent.
+This project focuses on analyzing employee attrition patterns and building a machine learning model to predict whether an employee is likely to leave the organization.
 
-Welcome to my submission for Task 1 of the Data Science Internship at Prodigy Infotech.In this task, I performed Exploratory Data Analysis (EDA), Data Preprocessing on a population dataset and created visualizations to understand the distribution and trends of key variables.
+The project uses Exploratory Data Analysis (EDA), feature engineering, and Logistic Regression to uncover key factors influencing attrition and evaluate model performance using multiple metrics.
 
-## Dataset
+#🎯 Objectives
 
-The dataset used in this project is the World Population Dataset (2001–2022), available here:
-<a href="https://github.com/WebberX45/Prodigy-Infotech-Data-Science-Task-1/blob/main/worldpopulationdata.csv">world_population_dataset</a>.<br>
-It contains population records across multiple countries for 22 years, enabling analysis of demographic patterns and global distribution.
+Understand employee attrition patterns using data visualization
 
- 
-## Tools & Libraries
+Perform feature engineering and encoding
 
-- Google Colab
-- Python
-- Pandas
-- NumPy
-- Matplotlib & Seaborn
+Build and evaluate a classification model
+
+Identify the most influential factors affecting attrition
+
+Provide actionable HR insights
+
+#📂 Dataset
+
+Source: HR Employee Attrition Dataset
+
+Format: CSV
+
+Target Variable: Attrition
+
+1 → Employee left
+
+0 → Employee stayed
+
+🛠️ Technologies & Libraries Used
+
+Python
+
+Pandas, NumPy
+
+Matplotlib
+
+Scikit-Learn
+
+Google Colab
+
+🔄 Project Workflow
+1️⃣ Data Loading & Inspection
+
+Loaded dataset from Google Drive
+
+Checked data types, missing values, and descriptive statistics
+
+2️⃣ Data Preprocessing
+
+Binary encoding using lambda functions
+
+One-hot encoding for categorical features
+
+Removal of irrelevant columns
+
+Feature scaling using StandardScaler
+
+3️⃣ Feature Engineering
+
+Created:
+
+TenureBucket
+
+MonthlyGroup
+
+AgeGroup
+
+Transformed them into dummy variables
+
+4️⃣ Exploratory Data Analysis (EDA)
+
+Key visualizations include:
+
+Overall attrition distribution
+
+Attrition rate by gender
+
+Attrition rate by overtime
+
+Department-wise attrition
+
+Tenure, age, and income-based attrition trends
+
+5️⃣ Model Building
+
+Logistic Regression classifier
+
+Stratified train-test split
+
+Model training on standardized features
+
+6️⃣ Model Evaluation
+
+Evaluation metrics:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+ROC-AUC Score
+
+Visual evaluation:
+
+Confusion Matrix
+
+ROC Curve
+
+7️⃣ Feature Importance Analysis
+
+Used Logistic Regression coefficients
+
+Identified top features influencing employee attrition
+
+Visualized:
+
+Impact strength (absolute coefficients)
+
+Direction of influence (positive / negative)
+
+📊 Key Insights
+
+OverTime is one of the strongest predictors of attrition
+
+Employees with lower tenure are more likely to leave
+
+Income level and job role significantly impact attrition
+
+Logistic Regression provides good interpretability for HR decision-making
+
+#✅ Model Performance (Sample)
+Accuracy  : ~0.86
+Precision : ~0.75
+Recall    : ~0.70
+F1 Score  : ~0.72
+ROC AUC   : ~0.84
 
 
-## Key Insights
+(Exact values may vary depending on data split)
 
-- Identified population distribution patterns across different years
-- Observed growth trends and variations among countries
-- Gained a clear understanding of global demographic structure
-- This EDA forms a solid base for future predictive modeling, forecasting, and deeper demographic analysis.
+#📁 Repository Structure
+📦 Employee-Attrition-Analysis
+ ┣ 📜 README.md
+ ┣ 📓 Employee_Attrition_Analysis.ipynb
+ ┣ 📂 data
+ ┃ ┗ 📄 HR-Employee-Attrition.csv
 
+#🚀 Future Enhancements
 
-## Conclusion
+Add Balanced Logistic Regression
 
-- This exploratory study provided meaningful insights into global population trends from 2001–2022.
-- The visualizations simplify complex data and help uncover patterns that may guide further analysis.
+Apply XGBoost / Random Forest
 
+Perform hyperparameter tuning
 
-## Contact
+Build a dashboard using Streamlit or Power BI
 
-For questions, feedback, or collaboration:<br>
-LinkedIn: https://www.linkedin.com/in/pranav-kumar-553583394<br>
-Email: d.sci.pranav@gmail.com
+Deploy model as a web application
+
+#🧠 Business Impact
+
+This analysis helps HR teams:
+
+Identify high-risk employees
+
+Reduce attrition through proactive interventions
+
+Improve employee retention strategies
+
+#📬 Contact
+
+Author: Prashant Pal
+📧 Email:prashantpal029@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/prashant-pal-855b09268
